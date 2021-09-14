@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Positioning</title>
+</head>
+<body>
+
+<style>
+
+    body {
+        background-color: maroon;
+    }
+
+    .nav_bar {
+        width: 100%;
+        height: 80px;
+        overflow: hidden;
+        background-color: white;
+        border-bottom: solid black;
+        box-shadow: 8px gray;
+        text-align: center;
+        position: fixed;
+        top: 0;
+
+
+    }
+
+    .nav_bar li {
+        list-style-type: none;
+        display: inline;
+        text-decoration: none;
+        font-size: 20px;
+        margin-bottom: 100px;
+
+    }
+
+    .nav_bar .logo {
+        width: 80px;
+        height: 80px;
+        background-color: black;
+        position: absolute;
+        right: 0px;
+        color: white;
+        vertical-align: middle;
+
+    }
+
+
+    .main_container {
+        height: 800px;
+        background-color: grey;
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+
+    .main-box {
+        height: 200px;
+        width: 200px;
+        margin: 20px;
+        margin-top: 100px;
+        background-color: white;
+        display: inline-block;
+    }
+
+
+    .footer {
+        width: 100%;
+        height: 80px;
+        background-color: white;
+        position: fixed;
+        bottom: 0px;
+        text-align: center;
+        border-top: solid black 2px;
+    }
+
+
+
+</style>
+
+
+
+
+<nav class="nav_bar">
+    <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li class="logo">LOGO</li>
+    </ul>
+</nav>
+
+<div class="main_container">
+    <div class="main-box"></div>
+    <div class="main-box"></div>
+    <div class="main-box"></div>
+    <div class="main-box"></div>
+
+
+</div>
+
+
+<footer class="footer">
+    <h1>Copyright 2021</h1>
+</footer>
+
+
+</body>
+</html>
